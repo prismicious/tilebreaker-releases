@@ -1,8 +1,7 @@
 # Tilebreaker
 
-**[Play it in your browser](https://prismicious.github.io/tilebreaker-releases/)**
--- nothing to download, nothing to install. Open it, click the first node in the
-tree, and the run starts.
+**[Play the newest build here](https://prismicious.github.io/tilebreaker-releases/)**
+
 
 A blockbreaker with no paddle. The field starts as one solid pastel slab with a
 2x2 pocket carved in the middle of it, and nothing in the pocket: a run opens on
