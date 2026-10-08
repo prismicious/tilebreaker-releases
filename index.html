@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; font-src 'self'; img-src data:; script-src 'self'; form-action 'none'; base-uri 'none'">
+<meta name="robots" content="noindex">
+<meta name="tilebreaker-full-url" content="https://tilebreaker-full.vercel.app/">
+<title>Tilebreaker has moved</title>
+<style>
+@font-face{font-family:"Departure Mono";src:url(DepartureMono-Regular.otf) format("opentype");font-display:swap}
+:root{--space:#05070f;--panel:#11141f;--edge:#1e2334;--text:#eef1f9;--muted:#8f99b4;--dim:#4b5470;--start:#7cc4ff;--warn:#f28f9c}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{margin:0;display:grid;place-items:center;padding:24px;background:var(--space);color:var(--text);
+font:15px/1.6 "Departure Mono",ui-monospace,Menlo,Consolas,monospace;-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;left:0;top:0;width:1px;height:1px;border-radius:1px;pointer-events:none;
+box-shadow:8vw 14vh #4b5470,21vw 71vh #2a3150,33vw 9vh #2a3150,44vw 88vh #4b5470,57vw 22vh #2a3150,
+63vw 63vh #4b5470,72vw 31vh #8f99b4,81vw 84vh #2a3150,90vw 12vh #4b5470,94vw 52vh #2a3150,
+13vw 46vh #2a3150,27vw 33vh #4b5470,51vw 47vh #2a3150,86vw 68vh #4b5470,6vw 92vh #2a3150}
+main{width:min(420px,100%);background:var(--panel);border:1px solid var(--edge);border-radius:10px;box-shadow:0 0 22px rgba(0,0,0,.45)}
+header{padding:11px 16px;border-bottom:1px solid var(--edge);font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--muted)}
+section{padding:22px 20px 20px}
+h1{margin:0 0 6px;font-size:22px;line-height:1.3;font-weight:normal}
+p{margin:0 0 18px;color:var(--muted)}
+.button{display:block;width:100%;margin-top:10px;padding:8px 14px;border:1px solid var(--start);border-radius:6px;background:transparent;
+color:var(--start);font:inherit;font-size:11px;letter-spacing:2px;text-transform:uppercase;text-align:center;text-decoration:none;cursor:pointer}
+.button:hover,.button:focus-visible{background:var(--start);color:var(--space);outline:none}
+.button.quiet{border-color:var(--edge);color:var(--muted)}
+.button.quiet:hover,.button.quiet:focus-visible{background:var(--edge);color:var(--text)}
+.note{margin:14px 0 0;font-size:13px;color:var(--muted)}
+.note.warn{color:var(--warn)}
+footer{padding:12px 20px;border-top:1px solid var(--edge);font-size:13px;color:var(--dim)}
+footer a{color:var(--muted)}
+.hidden{display:none}
+</style>
+<script src="saves.js" defer></script>
+<script src="moved.js" defer></script>
+</head>
+<body>
+<main>
+<header>Tilebreaker</header>
+<section>
+<h1>The full game has moved</h1>
+<p>It is now private, at a new address, and you sign in with a password to play.</p>
+<a id="go" class="button" href="https://tilebreaker-full.vercel.app/">Go to the new address</a>
+<div id="carry" class="hidden">
+<p class="note">This browser has progress from playing here. Bring it with you so you carry on where you left off.</p>
+<button id="carry-start" class="button quiet" type="button">Bring my progress</button>
+</div>
+<p id="carry-status" class="note hidden" role="status"></p>
+</section>
+<footer>Looking for the demo? <a href="https://prismicious.github.io/tilebreaker-releases-demo/">It is still here, free to play.</a></footer>
+</main>
+</body>
+</html>
