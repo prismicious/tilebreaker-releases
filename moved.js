@@ -40,7 +40,7 @@
       say("The new tab was blocked. Allow pop-ups for this page and press the button again.", true);
       return;
     }
-    say("Sign in in the new tab. Your saves are sent as soon as you have.");
+    say("Sign in on the new tab to copy your saves.");
   });
 
   window.addEventListener("message", onMessage);
